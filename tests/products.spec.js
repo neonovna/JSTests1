@@ -4,7 +4,6 @@ var locator = pr_page.locators;
 
 describe("Open Products page", function() {
 
-
   it("Check Products title", function() {
     pr_page.go();
     expect(browser.getTitle()).toEqual('Products and sets - LEGO.com UK - LEGO.com');
@@ -13,11 +12,9 @@ describe("Open Products page", function() {
     //  console.log(title);
     //});
   });
-
 });
 
 describe("Categories tab", function() {
-
 
   it("Open Categories tab", function() {
     locator.categories_tab_btn.click();
