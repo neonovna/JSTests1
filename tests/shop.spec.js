@@ -24,6 +24,5 @@ describe("Change Language", function() {
   it("Select UK", function() {
     locator.lang_uk.click();
     expect(locator.icon_uk.isDisplayed()).toBe(true);
-
   });
 });
