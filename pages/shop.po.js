@@ -10,8 +10,8 @@ module.exports = {
     icon_uk: element(by.xpath("//img[@data-reactid='14']")),
     lego_btn: element(by.xpath("//a[@href='http://www.lego.com/']")),
     wish_list_btn: element(by.xpath("//a[contains(@class,'link-wishlist')]")),
-    accounts_btn: element(by.xpath("//a[@data-reactid='12']")),
-    my_bag_btn: element(by.xpath("//a[@data-reactid='31']"))
+    account_btn: element(by.xpath("//div[@data-reactid='25']")),
+    my_bag_btn: element(by.xpath("//a[@data-reactid='31']")),
     //top menu
     shop_logo: element(by.xpath("//span[@data-reactid='50']")),
     sets_btn: element(by.xpath("//li[@data-reactid='53']")),
@@ -27,13 +27,16 @@ module.exports = {
     shop_guarantee_btn: element(by.xpath("//button[contains(.,'SHOP GUARANTEE')]")),
     shop_now1_btn: element(by.xpath("//section[@class='mainstage']/descendant::button[contains(.,'SHOP NOW')]")), //get grand child
     //button[contains(.,'SHOP NOW')]/ancestor::section[@class='mainstage']     => get grantparent
-
     carousel2: element(by.xpath("//div[@class='carousel--slide']")),
     shop_now2_btn: element(by.xpath("//section[@class='exclusives-carousel']/descendant::button[contains(.,'SHOP NOW')]")), //get grand child
 
-
     email_input: element(by.xpath("//input[@type='email']")),
-    sign_up_btn: element(by.xpath("//div[contains(@class, 'subscribe')]/descendant::button[@type='submit']"))
+    sign_up_btn: element(by.xpath("//div[contains(@class, 'subscribe')]/descendant::button[@type='submit']")),
+
+
+    breadcrumb_wish_list: element(by.xpath("//span[contains(.,'Wish List')]")),
+    account_window: element(by.xpath("//div[@class='legoid']")),
+    mini_bag: element(by.xpath("//div[@class='mini-cart']"))
 
   },
 

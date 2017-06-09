@@ -24,5 +24,27 @@ describe("Change Language", function() {
   it("Select UK", function() {
     locator.lang_uk.click();
     expect(locator.icon_uk.isDisplayed()).toBe(true);
+    browser.driver.sleep(3000);
+  });
+});
+
+describe("Check top buttons", function() {
+
+  it("Click on Wish list", function() {
+    locator.wish_list_btn.click();
+    browser.driver.sleep(3000);
+    expect(locator.breadcrumb_wish_list.isDisplayed()).toBe(true);
+  });
+
+  it("Click on Account", function() {
+    locator.account_btn.click();
+    browser.driver.sleep(3000);
+    expect(locator.account_window.isDisplayed()).toBe(true);
+  });
+
+  it("Click on My Bag", function() {
+    locator.my_bag_btn.click();
+    browser.driver.sleep(3000);
+    expect(locator.mini_bag.isDisplayed()).toBe(true);
   });
 });
