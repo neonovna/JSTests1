@@ -19,7 +19,8 @@ module.exports = {
     bricks_btn: element(by.xpath("//li[@data-reactid='63']")),
     extras_btn: element(by.xpath("//li[@data-reactid='68']")),
     discover_btn: element(by.xpath("//li[@data-reactid='73']")),
-    search: element(by.xpath("//input[@type='search']")),
+    search_input: element(by.xpath("//input[@type='search']")),
+    search_btn: element(by.xpath("//button[contains(.,'SUBMIT SEARCH')]")),
     banner_btn: element(by.xpath("//a[@data-reactid='107']")),
 
     carousel1: element(by.xpath("//div[@class='carousel--fade']")),
@@ -31,6 +32,8 @@ module.exports = {
     shop_now2_btn: element(by.xpath("//section[@class='exclusives-carousel']/descendant::button[contains(.,'SHOP NOW')]")), //get grand child
 
 
+    email_input: element(by.xpath("//input[@type='email']")),
+    sign_up_btn: element(by.xpath("//div[contains(@class, 'subscribe')]/descendant::button[@type='submit']"))
 
   },
 
