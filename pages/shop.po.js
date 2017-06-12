@@ -36,8 +36,13 @@ module.exports = {
 
     breadcrumb_wish_list: element(by.xpath("//span[contains(.,'Wish List')]")),
     account_window: element(by.xpath("//div[@class='legoid']")),
-    mini_bag: element(by.xpath("//div[@class='mini-cart']"))
+    mini_bag: element(by.xpath("//div[@class='mini-cart']")),
 
+    sets_modal: element(by.xpath("//div[@class='sets__content']")),
+    exclusives_modal: element(by.xpath("//div[@class='exclusives__content']")),
+    bricks_modal: element(by.xpath("//div[@class='bricks__content']")),
+    extras_modal: element(by.xpath("//div[@class='extras__content']")),
+    discover_modal: element(by.xpath("//div[@class='discover__content']"))
   },
 
   go: function() {

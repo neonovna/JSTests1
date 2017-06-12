@@ -48,3 +48,31 @@ describe("Check top buttons", function() {
     expect(locator.mini_bag.isDisplayed()).toBe(true);
   });
 });
+
+describe("Check Main menu", function() {
+  it("Open SETS content", function() {
+    locator.sets_btn.click();
+    expect(locator.sets_modal.isDisplayed()).toBe(true);
+  });
+
+  it("Open EXCLUSIVES content", function() {
+    locator.exclusives_btn.click();
+    expect(locator.exclusives_modal.isDisplayed()).toBe(true);
+  });
+
+  it("Open BRICKS content", function() {
+    locator.bricks_btn.click();
+    expect(locator.bricks_modal.isDisplayed()).toBe(true);
+  });
+
+  it("Open EXTRAS content", function() {
+    locator.extras_btn.click();
+    expect(locator.extras_modal.isDisplayed()).toBe(true);
+  });
+
+  it("Open DISCOVER content", function() {
+    locator.discover_btn.click();
+    expect(locator.discover_modal.isDisplayed()).toBe(true);
+  });
+
+});
