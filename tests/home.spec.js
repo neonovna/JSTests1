@@ -8,7 +8,6 @@ describe("Home Page", function() {
 
   it("Title is correct", function() {
     expect(browser.getTitle()).toContain('LEGO.com');
-
   });
 
   it("Logo is displayed", function() {
@@ -23,5 +22,4 @@ describe("Select US Language", function() {
     home_po_page.selectDropdownbyNum(locator.lang_selector_btn, 22);
     expect(browser.getTitle()).toContain('US');
   });
-
 });
