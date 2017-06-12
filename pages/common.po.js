@@ -6,7 +6,7 @@ module.exports = {
   },
 
   go: function() {
-    browser.get("https://www.lego.com/en-gb");
+    browser.get("https://www.lego.com/en-gb/");
     var locators = this.locators;
     locators.advert.isPresent().then(function(present) {
       if (present) {
@@ -14,4 +14,6 @@ module.exports = {
       }
     });
   }
+
+
 };

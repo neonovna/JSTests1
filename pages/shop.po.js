@@ -25,8 +25,8 @@ module.exports = {
 
     carousel1: element(by.xpath("//div[@class='carousel--fade']")),
     shop_guarantee_btn: element(by.xpath("//button[contains(.,'SHOP GUARANTEE')]")),
-    shop_now1_btn: element(by.xpath("//section[@class='mainstage']/descendant::button[contains(.,'SHOP NOW')]")), //get grand child
-    //button[contains(.,'SHOP NOW')]/ancestor::section[@class='mainstage']     => get grantparent
+    shop_now1_btn: element(by.xpath("//section[@class='mainstage']/descendant::button[contains(.,'SHOP NOW')]")), //get grandchild
+    //button[contains(.,'SHOP NOW')]/ancestor::section[@class='mainstage']     => get grandparent
     carousel2: element(by.xpath("//div[@class='carousel--slide']")),
     shop_now2_btn: element(by.xpath("//section[@class='exclusives-carousel']/descendant::button[contains(.,'SHOP NOW')]")), //get grand child
 

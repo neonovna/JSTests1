@@ -16,3 +16,12 @@ describe("Home Page", function() {
   });
 
 });
+
+describe("Select US Language", function() {
+
+  it("Select US Language", function() {
+    home_po_page.selectDropdownbyNum(locator.lang_selector_btn, 22);
+    expect(browser.getTitle()).toContain('US');
+  });
+
+});
