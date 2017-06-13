@@ -38,7 +38,16 @@ module.exports = {
     account_window: element(by.xpath("//div[@class='legoid']")),
     mini_bag: element(by.xpath("//div[@class='mini-cart']")),
 
-    sets_modal: element(by.xpath("//div[@class='sets__content']")),
+    sets_modal: element(by.xpath("//div[@class='sets']")),
+    sets_home_btn: element(by.xpath("//*[contains(text(),'SETS Home')]")),
+    interests_tab: element(by.xpath("//a[@href='#interests']")),
+    //a[text()='Interests']/descendant::div[@class='sets__tab-nav']
+    themes_tab: element(by.xpath("//a[@href='#themes']")),
+    all_interests_btn: element(by.xpath("//*[@href='/en-GB/Interests']")),
+    all_themes_btn: element(by.xpath("//*[@href='/en-GB/Themes']")),
+
+
+
     exclusives_modal: element(by.xpath("//div[@class='exclusives__content']")),
     bricks_modal: element(by.xpath("//div[@class='bricks__content']")),
     extras_modal: element(by.xpath("//div[@class='extras__content']")),

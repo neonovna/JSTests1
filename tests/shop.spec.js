@@ -74,5 +74,26 @@ describe("Check Main menu", function() {
     locator.discover_btn.click();
     expect(locator.discover_modal.isDisplayed()).toBe(true);
   });
+});
 
+
+describe("SETS check", function() {
+
+  it("Open SETS content", function() {
+    locator.sets_btn.click();
+    expect(locator.sets_modal.isDisplayed()).toBe(true);
+  });
+
+  it("Open Interests tab", function() {
+    browser.driver.sleep(3000);
+    locator.interests_tab.click();
+    browser.driver.sleep(3000);
+    expect(locator.all_interests_btn.isDisplayed()).toBe(true);
+  });
+
+  it("Open Themes tab", function() {
+    locator.themes_tab.click();
+    browser.driver.sleep(3000);
+    expect(locator.all_themes_btn.isDisplayed()).toBe(true);
+  });
 });
