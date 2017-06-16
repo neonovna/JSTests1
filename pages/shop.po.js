@@ -34,7 +34,7 @@ module.exports = {
     sign_up_btn: element(by.xpath("//div[contains(@class, 'subscribe')]/descendant::button[@type='submit']")),
 
 
-    breadcrumb_wish_list: element(by.xpath("//span[contains(.,'Wish List')]")),
+    breadcrumb_wish_list: element(by.xpath("//span[contains(.,'Wish')]")),
     account_window: element(by.xpath("//div[@class='legoid']")),
     mini_bag: element(by.xpath("//div[@class='mini-cart']")),
 
