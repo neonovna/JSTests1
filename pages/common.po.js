@@ -24,7 +24,6 @@ module.exports = {
     browser.driver.sleep(2000);
     var locators = this.locators;
     locators.accept_btn.click();
-    browser.driver.sleep(2000);
     locators.cookie_info.isPresent().then(function(present) {
       if (present) {
         locators.accept_btn.click();

@@ -5,7 +5,8 @@ exports.config = {
   //specs: ['./tests/notif_reg.spec.js'],
   //specs: ['./tests/register_modal.spec.js'],
   //specs: ['./tests/products.spec.js'],
-  specs: ['./tests/shop.spec.js'],
+  //specs: ['./tests/shop.spec.js'],
+  specs: ['./tests/sets.spec.js'],
 
 
   framework: 'jasmine2',

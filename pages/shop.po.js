@@ -33,26 +33,11 @@ module.exports = {
     email_input: element(by.xpath("//input[@type='email']")),
     sign_up_btn: element(by.xpath("//div[contains(@class, 'subscribe')]/descendant::button[@type='submit']")),
 
-
     breadcrumb_wish_list: element(by.xpath("//span[contains(.,'Wish')]")),
     account_window: element(by.xpath("//div[@class='legoid']")),
     mini_bag: element(by.xpath("//div[@class='mini-cart']")),
 
     sets_modal: element(by.xpath("//div[@class='sets']")),
-    sets_home_btn: element(by.xpath("//*[contains(text(),'SETS Home')]")),
-    interests_tab: element(by.xpath("//a[@href='#interests']")),
-    sets_nav_trail: element(by.xpath("//a[@href='/en-GB/Sets-Home' and @data-test='breadcrumb-link']")),
-    //a[text()='Interests']/descendant::div[@class='sets__tab-nav']
-    themes_tab: element(by.xpath("//a[@href='#themes']")),
-    all_interests_btn: element(by.xpath("//*[@href='/en-GB/Interests']")),
-    all_themes_btn: element(by.xpath("//*[@href='/en-GB/Themes']")),
-    interests_nav_trail: element(by.xpath("//span[@data-test='breadcrumb-page-title' and contains(text(),'Interests')]")),
-    themes_nav_trail: element(by.xpath("//span[@data-test='breadcrumb-page-title' and contains(text(),'Themes')]")),
-    themes_title: element(by.xpath("//h1[contains(text(),'Themes')]")),
-    interests_title: element(by.xpath("//h1[contains(text(),'Interests')]")),
-    sets_title: element(by.xpath("//h1[contains(text(),'Sets')]")),
-
-
     exclusives_modal: element(by.xpath("//div[@class='exclusives__content']")),
     bricks_modal: element(by.xpath("//div[@class='bricks__content']")),
     extras_modal: element(by.xpath("//div[@class='extras__content']")),
