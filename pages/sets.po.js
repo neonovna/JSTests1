@@ -7,7 +7,7 @@ module.exports = {
     themes_tab: element(by.xpath("//a[@href='#themes']")),
 
     all_interests_btn: element(by.xpath("//*[@href='/en-US/Interests']")),
-    all_themes_btn: element(by.xpath("//*[@href='/en-US/Themes']")),
+    themes_btn: element(by.xpath("//*[@href='/en-US/Themes']")),
 
     sets_title: element(by.xpath("//h1[contains(text(),'Sets')]")),
     themes_title: element(by.xpath("//h1[contains(text(),'Themes')]")),
@@ -24,5 +24,11 @@ module.exports = {
     list_of_products: element(by.xpath("//div[@class='product-listing__results']")),
     add_to_bag_btn: element(by.xpath("//span[text()='ADD TO BAG']")),
     added_notif: element(by.xpath("//p[text()='ADDED TO BAG']")),
+  },
+
+  sets_home_page: function() {
+    browser.get("https://shop.lego.com/en-US/Sets-Home");
+    browser.driver.sleep(3000);
+    expect(this.locators.sets_title.isDisplayed()).toBe(true);
   }
 };
