@@ -25,15 +25,20 @@ describe("Add SETS Interests product to bag", function() {
     browser.driver.sleep(3000);
     expect(locator.interests_nav_trail.isDisplayed()).toBe(true);
     expect(locator.interests_title.isDisplayed()).toBe(true);
+    //check if view button is inactive
+    expect(locator.view_selected_inactive.isDisplayed()).toBe(true);
   });
 
   it("Select any Game", function() {
     locator.any_checkbox.click();
     browser.driver.sleep(2000);
+    //vie selected button is active
+    expect(locator.view_selected_active.isDisplayed()).toBe(true);
+
   });
 
   it("View Selected", function() {
-    locator.view_selected.click();
+    browser.executeScript("arguments[0].click()", locator.view_selected);
     browser.driver.sleep(3000);
     expect(locator.list_of_products.isDisplayed()).toBe(true);
   })

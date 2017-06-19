@@ -15,6 +15,11 @@ exports.config = {
   //   'browserName': 'firefox' // or 'safari'
   // },
 
+  onPrepare: function() {
+    browser.driver.manage().window().maximize();
+  },
+
+
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {

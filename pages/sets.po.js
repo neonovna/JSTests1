@@ -18,6 +18,8 @@ module.exports = {
     themes_nav_trail: element(by.xpath("//span[@data-test='breadcrumb-page-title' and contains(text(),'Themes')]")),
 
     any_checkbox: element(by.xpath("//div[@class='checkbox__tick']")),
+    view_selected_inactive: element(by.xpath("//button[@class='category-toolbar__navigation-link--disabled']")),
+    view_selected_active: element(by.xpath("//button[@class='category-toolbar__navigation-link']")),
     view_selected: element(by.xpath("//button[contains(.,'VIEW SELECTED')]")),
     list_of_products: element(by.xpath("//div[@class='product-listing__results']")),
     add_to_bag_btn: element(by.xpath("//span[text()='ADD TO BAG']")),
