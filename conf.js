@@ -6,7 +6,8 @@ exports.config = {
   //specs: ['./tests/register_modal.spec.js'],
   //specs: ['./tests/products.spec.js'],
   //specs: ['./tests/shop.spec.js'],
-  specs: ['./tests/sets.spec.js'],
+  //specs: ['./tests/sets.spec.js'],
+  specs: ['./tests/exclusives.spec.js'],
 
 
   framework: 'jasmine2',
