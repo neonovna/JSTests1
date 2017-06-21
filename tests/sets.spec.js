@@ -2,6 +2,7 @@ var common = require('../pages/common.po.js');
 var shop_page = require('../pages/shop.po.js');
 var sets_page = require('../pages/sets.po.js');
 var locator_sh = shop_page.locators;
+var locator_common = common.locators;
 var locator = sets_page.locators;
 
 
@@ -46,9 +47,9 @@ describe("Add SETS Interests product to bag", function() {
   })
 
   it("Add any game to Bag", function() {
-    locator.add_to_bag_btn.click();
+    locator_common.add_to_bag_btn.click();
     browser.driver.sleep(2000);
-    expect(locator.added_notif.isDisplayed()).toBe(true);
+    expect(locator_common.added_notif.isDisplayed()).toBe(true);
   });
 
 });
@@ -81,9 +82,9 @@ describe("Add SETS Themes product to cart", function() {
   });
 
   it("Add to BAG Themes product", function() {
-    locator.add_to_bag_btn.click();
+    locator_common.add_to_bag_btn.click();
     browser.driver.sleep(3000);
-    expect(locator.added_notif.isDisplayed()).toBe(true);
+    expect(locator_common.added_notif.isDisplayed()).toBe(true);
   });
 });
 

@@ -21,9 +21,8 @@ module.exports = {
     view_selected_inactive: element(by.xpath("//button[@class='category-toolbar__navigation-link--disabled']")),
     view_selected_active: element(by.xpath("//button[@class='category-toolbar__navigation-link']")),
     view_selected: element(by.xpath("//button[contains(.,'VIEW SELECTED')]")),
-    list_of_products: element(by.xpath("//div[@class='product-listing__results']")),
-    add_to_bag_btn: element(by.xpath("//span[text()='ADD TO BAG']")),
-    added_notif: element(by.xpath("//p[text()='ADDED TO BAG']")),
+    list_of_products: element(by.xpath("//div[@class='product-listing__results']"))
+
   },
 
   sets_home_page: function() {

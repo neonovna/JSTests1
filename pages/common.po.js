@@ -4,7 +4,11 @@ module.exports = {
     no_btn: element(by.xpath("//*[@id='IPEinvL124035']/map/area[2]")),
     register_btn: element(by.xpath('//a[contains(@data-uitest,"register-link")]')),
     cookie_info: element(by.xpath('//div[contains(@class, "cookie-consent")]')),
-    accept_btn: element(by.xpath('//button[contains(.,"ACCEPT")]'))
+    accept_btn: element(by.xpath('//button[contains(.,"ACCEPT")]')),
+
+    //shop
+    add_to_bag_btn: element(by.xpath("//span[text()='ADD TO BAG']")),
+    added_notif: element(by.xpath("//p[text()='ADDED TO BAG']"))
 
   },
 
