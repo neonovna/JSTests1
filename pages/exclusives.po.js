@@ -12,6 +12,7 @@ module.exports = {
     new_breadcrumbs: element(by.xpath("//span[text()='New']")),
     hard_breadcrumbs: element(by.xpath("//span[text()='Hard to Find Items']")),
     view_all_breadcrumbs: element(by.xpath("//span[text()='Exclusives - View all']")),
+    excl_home_breadcrumbs: element(by.xpath("//a[contains(@href, '/Exclusives-Home') and @data-test='breadcrumb-link']"))
 
 
   },
