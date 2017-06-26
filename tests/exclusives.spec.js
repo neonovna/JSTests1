@@ -53,12 +53,11 @@ describe("Add to Bag Hard to Find ECXLUSIVES: ", function() {
 
   it("Add NEW product to bag", function() {
     locator_comm_po.add_to_bag_btn.click();
-    browser.driver.sleep(1000);
+    browser.driver.sleep(2000);
     expect(locator_comm_po.added_notif.isDisplayed()).toBe(true);
   });
 
   it("Back to Exclusive Home page", function() {
-
     browser.executeScript('window.scrollTo(0,0)');
     browser.driver.sleep(3000);
     locator.excl_home_breadcrumbs.click();
