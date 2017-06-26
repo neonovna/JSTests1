@@ -7,7 +7,8 @@ exports.config = {
   //specs: ['./tests/products.spec.js'],
   //specs: ['./tests/shop.spec.js'],
   //specs: ['./tests/sets.spec.js'],
-  specs: ['./tests/exclusives.spec.js'],
+  //specs: ['./tests/exclusives.spec.js'],
+  specs: ['./tests/wish_list.spec.js'],
 
 
   framework: 'jasmine2',
