@@ -7,11 +7,8 @@ describe("Open Products page", function() {
   it("Check Products title", function() {
     pr_page.go();
     expect(browser.getTitle()).toEqual('Products and sets - LEGO.com UK - LEGO.com');
-    //how to work with promise = then()
-    //browser.getTitle().then(function(title) {
-    //  console.log(title);
-    //});
   });
+
 });
 
 describe("Categories tab", function() {

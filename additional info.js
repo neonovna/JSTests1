@@ -15,3 +15,12 @@ var scrollIntoView = function() {
   arguments[0].scrollIntoView();
 };
 browser.executeScript(scrollIntoView, loc);
+
+
+//how to work with promise = then()
+browser.getTitle().then(function(title) {
+  console.log(title);
+});
+
+//++++RUN SPECIFIC SUITE+++
+protractor.conf.js--suite homepage, search
